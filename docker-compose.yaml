@@ -37,6 +37,5 @@ services:
     volumes:
       - ./dags:/usr/local/airflow/dags
       - ./scripts:/usr/local/airflow/scripts
+      - ./data:/usr/local/airflow/data
       - /var/run/docker.sock:/var/run/docker.sock
-    
-
