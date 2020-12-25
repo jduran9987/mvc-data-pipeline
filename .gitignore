@@ -2,4 +2,4 @@
 db/
 logs/
 data/
-dag/__pycache__/
+**/__pycache__/
