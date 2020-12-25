@@ -21,6 +21,8 @@ services:
     ports:
       - '8080:8080'
     volumes:
+      - ./dags:/usr/local/airflow/dags
+      - ./logs:/usr/local/airflow/logs
       - ./scripts:/usr/local/airflow/scripts
 
   scheduler:
@@ -36,6 +38,7 @@ services:
       - '8793:8793'
     volumes:
       - ./dags:/usr/local/airflow/dags
-      - ./scripts:/usr/local/airflow/scripts
       - ./data:/usr/local/airflow/data
+      - ./logs:/usr/local/airflow/logs
+      - ./scripts:/usr/local/airflow/scripts
       - /var/run/docker.sock:/var/run/docker.sock
