@@ -31,3 +31,6 @@ Finally, start up the containers with docker compose
 
 ## Airflow Webserver
 In your browser, go to `http://localhost:8080` and turn on the nyc_collisions_pipeline DAG to begin triggering the tasks.
+
+## Tutorial
+Please visit my blog for a step-by-step tutorial for this project at https://duran9987.medium.com/lets-build-an-elt-pipeline-part-i-introduction-fd40a8a81aa5
